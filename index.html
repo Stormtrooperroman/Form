@@ -7,16 +7,50 @@
 	</script>
 </head>
 <body>
-	<form action="" onsubmit="submitAction(this)" name="nameForm">
 	<center>
-	<label for="text"> Your name</label>
-	<br>
-	<input type="text" name="nameInput">
-	<br>
-	<br>
-	<input type="submit" name="submit" value="Send">
-	</center>
+	<form action=""  name="nameForm" id="idForm">
+		<label for="textName"> Введите имя </label>
+		<br>
+		<input type="textName" name="nameInput" id="idInput">
+		<br>
+		<br>
+		<input type="radio" name="bodyParts" value="cкафандр" >
+		<label for="bodyParts"> Скафандр </label>
+		<br>
+		<br>
+		<input type="radio" name="bodyParts" value="cтвёртку">
+		<label for="bodyParts"> Отвёртку</label>
+		<br>
+		<br>
+		<input type="radio" name="bodyParts" value= "лазерную винтовку">
+		<label for="bodyParts"> Лазерную винтовку</label>
+		<br>
+		<br>
+		<label for="textNumber"> Год </label>
+		<br>	
+		<input type="textNumber" name="numberInput">
+		<br>
+		<br>
+		<input type="radio" name="Number" value="Петра">
+		<label for="Number"> Петра </label>
+		<br>
+		<br>
+		<input type="radio" name="Number" value="Ивана">
+		<label for="Number"> Ивана </label>
+		<br>
+		<br>
+		<input type="radio" name="Number" value="Александра">
+		<label for="Number"> Александра</label>
+		<br>
+		<br>
+		<input type="button" name="but2" onclick="submitAction(getElementById('idForm'))" value="Сгенерировать">
 	</form>
+	<div id="text1">
+		Вы, <div id="name"></div> , - американский астронавт на Международной космической станции.Сейчас <div id="year"></div> год.
+		Началась вторая холодная война. Напряженность между США и Россией выше, чем у всех, и российские космонавты начинают шептаться и кидать на вас странные взгляды.
+		Вы берёте <div id="weapons"></div>. И убиваете <div id="nameRus"></div>. Началась Третья Мировая Войнаж
+	</div>
+	</center>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
